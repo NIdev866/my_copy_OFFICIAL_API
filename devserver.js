@@ -32,7 +32,7 @@
 		}));
 
 
-		var mobileApi = require('./mobile/mobileApi.js')(app, express);
+		//var mobileApi = require('./mobile/mobileApi.js')(app, express);
 		var loginApi = require('./serverRoutes/loginApi.js')(app,express);
 		var jobseekerApi = require('./serverRoutes/jobseekerApi.js')(app,express);
 		var adminApi = require('./serverRoutes/adminApi.js')(app,express);
@@ -47,6 +47,7 @@
 
 		app.set('port', process.env.PORT || 3000);
 		app.use(express.static(path.join(__dirname, '/public')));
+		//app.use(express.static(path.join(__dirname, '/dist')));
 
 		
 		app.use(bodyParser.urlencoded({extended: true}));
@@ -58,7 +59,7 @@
 
 
 		//ROUTES DEFINED
-		app.use('/resumeproapi',mobileApi);
+		//app.use('/resumeproapi',mobileApi);
 		app.use('/login', loginApi);
 		app.use('/jobseeker',jobseekerApi);
 		app.use('/admin',adminApi);
