@@ -1,0 +1,52 @@
+.icon-20{
+	font-size: 20px;
+}
+
+md-sidenav-layout{
+	min-height: 100vh;
+	position: absolute;
+}
+md-content{
+	height: 100%;
+}
+
+
+[md-raised-button]{
+	
+}
+
+md-grid-list{
+	max-width: 1403px;
+	margin: 16px;
+}
+.app-sidenav {
+  padding: 10px;
+  min-width: 100px;
+}
+.app-icon-button {
+  box-shadow: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.admin-tabs{
+	float:right;
+	position: absolute;
+}
+.admin-views-container{
+	min-height: 800px;
+	width: 1200px;
+	background-color: yellow;
+	float:right;
+}

@@ -1,0 +1,20 @@
+
+//NEED npm i -g typescript
+{
+	"wprowadzenie":[
+		{
+		"create app": "ng new app-name",
+		"start server": "ng serve",
+		"generate component": "ng g c ",//optional to add flags: -it -ic
+		"generate service": "ng g s "
+		},
+		{
+			"ng-component": "u can add normal html tags inside component"
+		},
+		{
+			ng-build : makes build that can be served by node.js in /dist
+		}
+	]
+}
+
+//COMPONENTS ARE ADDED AUTOMATICALY TO MAIN ANGULAR CONFIG STACK

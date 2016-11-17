@@ -1,0 +1,59 @@
+{
+  "name": "bitrecwebapp",
+  "version": "1.0.0",
+  "description": "bitrec register app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Pat_Ties@bitbucket.org/bitrec_website/web_app_prod.git"
+  },
+  "author": "patryk ties",
+  "license": "mit",
+  "bugs": {
+    "url": "https://Pat_Ties@bitbucket.org/bitrec_website/web_app_prod.git"
+  },
+  "homepage": "https://www.bitrec.co.uk",
+  "dependencies": {
+    "JSONStream": "^1.0.4",
+    "ajv": "^4.8.2",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.13.2",
+    "bower": "^1.4.1",
+    "bunyan": "^1.8.4",
+    "cors": "^2.8.1",
+    "crypto": "0.0.3",
+    "event-stream": "^3.3.1",
+    "express": "^4.13.1",
+    "fcm-node": "^1.0.14",
+    "jsonwebtoken": "^7.1.9",
+    "loggly": "^1.1.1",
+    "mime": "^1.3.4",
+    "morgan": "^1.6.1",
+    "multer": "^1.0.1",
+    "mysql": "^2.8.0",
+    "node-mysql-nesting": "0.0.3",
+    "promise-mysql": "^1.3.2",
+    "requirejs": "^2.2.0",
+    "sendgrid": "^4.4.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-requirejs-optimize": "^1.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.2.0"
+  }
+}

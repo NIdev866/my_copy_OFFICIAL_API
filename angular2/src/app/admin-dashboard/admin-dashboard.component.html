@@ -1,0 +1,74 @@
+<div>
+	
+   <md-toolbar color='primary' class='md-primary'>
+   	  <md-icon class='icon-20'>pets</md-icon>
+	  <p>{{jobseeker_id}}</p>
+	  <button md-raised-button class='md-primary' 
+	   aria-label="Log out" 
+	   
+	   (click) = 'onLogout()'
+	   >
+	    LOG OUT
+	  </button>
+	  <button md-raised-button color='accent' (click)='openSideNav()'>
+	  	MENU
+	  </button>
+	  <button class="app-icon-button" (click)="sidenav.toggle()">
+     	 <i class="material-icons app-toolbar-menu">menu</i>
+   	 </button>
+   	 <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+	</md-toolbar>
+	<md-sidenav-layout> 
+		<md-sidenav mode='side' class="app-sidenav" #sidenav>
+			<md-tab-group>
+				<md-tab> 
+					<template md-tab-label>Details</template>
+					<template md-tab-content>
+						<button md-raised-button (click)='sidenav.close()' color='accent'>CLOSE</button>
+					</template>
+				</md-tab>	
+				<md-tab>
+					<template md-tab-label>Feed</template>
+					<template md-tab-content>Details</template>
+				</md-tab>					
+			</md-tab-group>
+		</md-sidenav>
+		<!--<md-grid-list cols='4' rowHeight='200px'>
+			<md-grid-title *ngFor='let jobseeker of jobseekers'>
+				<img src=''>
+			</md-grid-title>
+		</md-grid-list>-->
+	</md-sidenav-layout>
+	
+	<md-tab-group (selectChange)='getIndex(selectedIndex)' [selectedIndex]='1' class='admin-tabs'>
+		<md-tab> 
+			<template md-tab-label>AddCampaign</template>
+			<template md-tab-content>
+				
+			</template>
+		</md-tab>	
+		<md-tab (click)='viewCampaigns()'>
+			<template md-tab-label>ViewCampaigns</template>
+			<template md-tab-content>
+				
+			</template>
+		</md-tab>
+		<md-tab (click)='applicants()'>
+			<template md-tab-label>Applicants</template>
+			<template md-tab-content>
+				
+			</template>
+		</md-tab>					
+	</md-tab-group>
+	<section class='admin-views-container'>
+		<router-outlet></router-outlet>
+	</section>
+	
+	
+
+	  
+ 
+   
+   
+</div>
+<!--<app-signup></app-signup>-->
