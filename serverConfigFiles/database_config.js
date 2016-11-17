@@ -28,7 +28,6 @@ var database_config = {
 			database: 'resume_pro',
 			connectionLimit: 10
 		}
-	
 };
 
 module.exports = database_config;
