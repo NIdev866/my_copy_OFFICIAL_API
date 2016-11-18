@@ -14,12 +14,12 @@ www.bitrec.co.uk -> login button
 
 ### How do I get set up? ###
 
-ANGULAR2 /n
-1. gitbash on angular2/
-2. npm i
-3. wait for dependancies to install
-4. ng serve
-5. go localhost:4200 
+ANGULAR2
+-1. gitbash on angular2/
+-2. npm i
+-3. wait for dependancies to install
+-4. ng serve
+-5. go localhost:4200 
 ANGULAR1
 1. it is served by node.js server from public/
 2. run development server by : 
