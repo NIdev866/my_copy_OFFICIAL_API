@@ -1,0 +1,14 @@
+.menu { 
+	height:860px;
+ }
+
+.row {
+	margin:0px;
+	padding:0px;
+}
+
+.list {
+	height:780px;
+	overflow-y: scroll;
+}
+

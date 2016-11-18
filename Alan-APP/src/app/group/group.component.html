@@ -1,0 +1,30 @@
+<div class="column">
+	<div class="row">
+		<div class="col l2 blue" style="padding-top:15px;padding-bottom:15px;">
+			<h5 class="center-align" style="color:white;">Category</h5>
+		</div>
+		<div *ngIf="showBar == true" class="col l2" style="padding-top:15px;padding-bottom:15px;">
+			<h5 class="center-align">Jobseeker</h5>
+		</div>
+		<div class="col l8 right-align">
+			<facebook-controller></facebook-controller>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col l2 menu" style="background-color:rgb(50,50,50);" >
+			<div class="input-field">
+		        <input id="icon_prefix" type="text" class="validate" style="color:white;" (keyup)="0" #groupSearch>
+		        <label for="icon_prefix">Group Search</label>
+		    </div>
+			<ul class="collection" >
+				<span >
+					<a [routerLink]="group.name" *ngFor="let group of groups | groupSearchPipe: groupSearch.value" class="collection-item" style="background-color:rgb(50,50,50);color:white;" (click)="showGroup(group);">
+						<p>{{group.name}}</p>
+					</a>
+				</span>
+			</ul>
+		</div>
+		<router-outlet></router-outlet>
+	</div>
+</div>
+

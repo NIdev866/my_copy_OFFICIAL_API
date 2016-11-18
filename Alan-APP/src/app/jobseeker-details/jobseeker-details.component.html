@@ -1,0 +1,17 @@
+<div class="col l8">
+<app-tabs>
+  	<app-tab tabTitle="Details">
+	   	<div class=" center">
+			<img src="{{jobseeker.pic_url}}" class="circle responsive-img" style="width:128px;"/>
+			<h4>{{jobseeker.first_name}} {{jobseeker.last_name}}</h4>
+			<h5>Age: {{jobseeker.age}}</h5>
+			<button class="btn" (click)="selection.showSelectedJobseekers()">Show Selected Jobseekers</button>
+			
+		</div>
+	</app-tab>
+	<app-tab tabTitle="Map">
+	   <app-map></app-map>
+  	</app-tab>
+</app-tabs>
+
+</div>

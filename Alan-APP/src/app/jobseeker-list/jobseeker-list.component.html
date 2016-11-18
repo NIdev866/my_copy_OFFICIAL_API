@@ -1,0 +1,18 @@
+<div class="col l2 menu" style="background-color:rgb(240,240,240);" >
+	<div class="input-field">
+        <input id="icon_prefix" type="text" class="validate" style="color:black;" (keyup)="0" #jobseekerSearch>
+        <label for="icon_prefix">Jobseeker Search</label>
+    </div>
+    <div class="list">
+		<ul class="collection">
+			<span *ngFor="let person of jobseekers | seekerSearch:jobseekerSearch.value; let i = index;">
+				<a [routerLink]="['jobseeker', person.id]" [class.selected]="person.selected" class="collection-item avatar" style="color:black;" *ngIf="i<10 && person.group == groupName" (click)="getJobseeker(person);" >
+					<a href="" (click)="selection.selectionHandler(person)"><img src="{{person.pic_url}}" class="circle"></a>
+					<span class="title">{{person.first_name}} {{person.last_name}}</span>
+					<p>Age: {{person.age}}</p>
+				</a>
+			</span>
+		</ul>
+	</div>
+</div>
+<router-outlet></router-outlet>
