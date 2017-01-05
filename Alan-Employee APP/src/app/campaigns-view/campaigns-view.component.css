@@ -1,0 +1,23 @@
+.title {
+	font-size: 40px;
+}
+
+.company_name {
+	font-size:15px;
+	color:rgba(0,0,0,200);
+}
+
+.location {
+	font-size:15px;
+	color:rgba(0,0,0,200);
+}
+
+.job_type {
+	font-size:15px;
+	color:rgba(0,0,0,200);
+}
+
+.salary {
+	font-size:20px;
+	color:rgba(0,0,0,230);
+}

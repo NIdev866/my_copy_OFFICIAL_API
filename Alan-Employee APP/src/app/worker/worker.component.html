@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col l2" style="background-color:rgb(161,131,208);">
+		<ul class="collection" style="border:0px;">
+			<li class="collection-item avatar" style="background-color:rgb(161,131,208); color:white; ">
+				<img src="{{this.login.person.pic_url}}" class="circle picture">
+				<span class="title">{{this.login.person.first_name}} {{this.login.person.last_name}}</span>
+				<p class="sub-title"> Employee </p>
+			</li>
+		</ul>
+	</div>
+	<div class="col l10">
+		<a (click)="this.logout()" class=" waves-effect waves-light btn right-align">Logout</a>
+	</div>
+</div>
+<div class="row">
+	<div class="col l2 menu">
+		<ul class="collection" style="border:0px;">
+			<a [routerLink]="['dashboard']" ><li class="collection-item "><i class="material-icons fix-icon">dashboard</i> Dashboard</li> </a>
+		</ul>
+	</div>
+	<router-outlet></router-outlet>
+</div>

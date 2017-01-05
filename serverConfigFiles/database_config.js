@@ -3,13 +3,13 @@ var database_config = {
 		dev: {
 			host: 'localhost',
 			user: 'root',
-			password: 'kaito',
+			password: 'kamikaze13',
 			database: 'resume_pro'
 		},
 		prod: {
 			host: 'localhost:',
 			user: 'root',
-			password: 'kaito',
+			password: 'kamikaze13',
 			database: 'resume_pro'
 		},
 
@@ -17,14 +17,14 @@ var database_config = {
 		dev_pool:{
 		  host: 'localhost',
 		  user: 'root',
-		  password: 'kaito',
+		  password: 'kamikaze13',
 		  database: 'resume_pro',
 		  connectionLimit: 10
 		},
 		prod_pool:{
 			host: 'localhost',
 			user: 'root',
-			password: 'kaito',
+			password: 'kamikaze13',
 			database: 'resume_pro',
 			connectionLimit: 10
 		}

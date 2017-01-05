@@ -1,0 +1,72 @@
+<div class="center">
+	<img src="{{this.login.person.pic_url}}" class="circle picture" />
+</div>
+<form [formGroup]="this.form" (ngSubmit)="saveChanges(this.form.value)" class="col s10">
+    <div class="row">
+	    <div class="input-field col s6">
+		    <input [(ngModel)]="this.login.person.first_name" formControlName="first_name" name="first_name" type="text" required>
+		    <label class="active" for="first_name">First Name</label>
+	    </div>
+		<div class="input-field col s6">
+		    <input [(ngModel)]="this.login.person.last_name" formControlName="last_name" name="last_name" type="text"  required>
+		    <label class="active" for="last_name">Last Name</label>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="input-field col s6">
+	    	<input [(ngModel)]="this.login.person.date_of_birth" formControlName="date_of_birth" name="date_of_birth" type="text" required>
+	    	<label class="active" for="date_of_birth">Date Of Birth</label>
+	    </div>
+	    <div class="input-field col s6">
+	    	<input [(ngModel)]="this.login.person.gender" formControlName="gender" name="gender" type="text" required>
+	    	<label class="active" for="gender">Gender</label>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="input-field col s6">
+	    	<input [(ngModel)]="this.login.person.email" formControlName="email" name="email" type="text" required>
+	    	<label class="active" for="email">Email</label>
+	    </div>
+	    <div class="input-field col s6">
+	    	<input [(ngModel)]="this.login.person.pic_url" formControlName="pic_url" name="pic_url" type="text" required>
+	    	<label class="active" for="pic_url">Picture URL</label>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="input-field col s12">
+	    	<input [(ngModel)]="this.login.person.street_adress" formControlName="street_adress" name="street_adress" type="text" required>
+	    	<label class="active" for="street_adress">Address</label>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="input-field col s6">
+	    	<input [(ngModel)]="this.login.person.city" formControlName="city" name="city" type="text" required>
+	    	<label class="active" for="city">City</label>
+	    </div>
+	    <div class="input-field col s6">
+	    	<input [(ngModel)]="this.login.person.country" formControlName="country" name="country" type="text" required>
+	    	<label class="active" for="country">Country</label>
+	    </div>
+
+	    <div class="right-align">
+	    	<button class="btn btn-default">Update</button>
+	    </div>
+    </div>
+</form>
+
+Created Campaigns: {{this.campaigns.campaignsByCreatedId.length}}
+<ul class="collection" *ngIf="this.campaigns.campaignsByCreatedId.length > 0">
+	<li *ngFor="let campaign of this.campaigns.campaignsByCreatedId" class="collection-item avatar" (click)="viewCampaign(campaign.id)" >
+		<i class="material-icons circle">folder</i>
+		<span class="title"><b>{{campaign.title}}</b></span>
+		<p> <i>{{campaign.company_name}}</i><br>
+		Job type: {{campaign.job_type}}
+		</p>
+	</li>
+</ul>
+
+<div id="modal2" class="modal" materialize="modal" [materializeActions]="_viewCampaign">
+  <div class="modal-content">
+    <app-campaigns-view></app-campaigns-view>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="row-fix">
+	<div class="buttons-group right-align">
+		<a class="waves-effect waves-light btn modal-trigger" (click)="addCampaign()"><i class="material-icons left">add</i>Add Campaign</a>
+	</div>
+	<span class="category-title">Campaigns: ({{this.campaignsList.length}}) </span>
+	<ul class="collection" *ngIf="this.campaignsList.length > 0">
+		<li *ngFor="let campaign of this.campaignsList" class="collection-item avatar" (click)="viewCampaign(campaign.id)" >
+			<i class="material-icons circle">folder</i>
+			<span class="title"><b>{{campaign.title}}</b></span>
+			<p> <i>{{campaign.company_name}}</i><br>
+			Job type: {{campaign.job_type}}
+			</p>
+		</li>
+	</ul>
+</div>
+
+<div id="modal2" class="modal" materialize="modal" [materializeActions]="_viewCampaign">
+  <div class="modal-content">
+    <app-campaigns-view></app-campaigns-view>
+  </div>
+  <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-light btn" (click)="apply()">Apply</a>
+    </div>
+</div>
