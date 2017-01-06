@@ -1,0 +1,8 @@
+<div class="box center">
+	<md-radio-group [(ngModel)]="chosenOption">
+		<md-radio-button class="radio" value="user">User</md-radio-button>
+		<md-radio-button class="radio" value="client">Client</md-radio-button>
+	</md-radio-group> <br>
+	<md-input placeholder="Enter ID" #input_ID></md-input>
+	<button md-raised-button (click)="login(chosenOption, input_ID.value)">Login</button>
+</div>

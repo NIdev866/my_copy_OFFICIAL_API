@@ -1,0 +1,20 @@
+.center {
+	display: flex;
+  justify-content: center;
+}
+
+.circle {
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:100%;
+}
+
+.picture {
+	width:150px;
+	height:150px;
+
+}
+
+.profile_name {
+	font-size:1.3em;
+}

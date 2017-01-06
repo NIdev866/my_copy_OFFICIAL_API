@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+@import "../node_modules/materialize-css/dist/css/materialize.css";
+
+body { 
+	margin: 0px;
+	padding: 0px;
+	font-family: Roboto, sans-serif;
+	background-color: rgb(240,240,240);
+ }
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

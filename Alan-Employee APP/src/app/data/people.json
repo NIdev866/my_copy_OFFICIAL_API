@@ -1,0 +1,162 @@
+"people": [
+  {
+    "id": 325254,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Benton",
+    "last_name": "Walker",
+    "age": 34,
+    "eyeColor": "brown",
+    "group": "Stock Supplier",
+    "category": "worker"
+  },
+  {
+    "id": 398349,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Lang",
+    "last_name": "Carr",
+    "age": 25,
+    "eyeColor": "green",
+    "group": "Random Group",
+    "category": "worker"
+  },
+  {
+    "id": 644409,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Miles",
+    "last_name": "Copeland",
+    "age": 26,
+    "eyeColor": "brown",
+    "group": "Builder",
+    "category": "worker"
+  },
+  {
+    "id": 246430,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Ochoa",
+    "last_name": "Sanders",
+    "age": 33,
+    "eyeColor": "blue",
+    "group": "Stock Supplier",
+    "category": "jobseeker"
+  },
+  {
+    "id": 577317,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Rowe",
+    "last_name": "Mitchell",
+    "age": 27,
+    "eyeColor": "brown",
+    "group": "Forklift",
+    "category": "worker"
+  },
+  {
+    "id": 821015,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Dorsey",
+    "last_name": "Christensen",
+    "age": 23,
+    "eyeColor": "green",
+    "group": "Forklift",
+    "category": "jobseeker"
+  },
+  {
+    "id": 324996,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Kidd",
+    "last_name": "Barnett",
+    "age": 20,
+    "eyeColor": "blue",
+    "group": "Builder",
+    "category": "worker"
+  },
+  {
+    "id": 168692,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Hays",
+    "last_name": "Lawson",
+    "age": 35,
+    "eyeColor": "green",
+    "group": "Builder",
+    "category": "worker"
+  },
+  {
+    "id": 973091,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Randolph",
+    "last_name": "Bright",
+    "age": 40,
+    "eyeColor": "blue",
+    "group": "Forklift",
+    "category": "jobseeker"
+  },
+  {
+    "id": 320063,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Kennedy",
+    "last_name": "Gibson",
+    "age": 35,
+    "eyeColor": "green",
+    "group": "Forklift",
+    "category": "worker"
+  },
+  {
+    "id": 125408,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Travis",
+    "last_name": "Bell",
+    "age": 33,
+    "eyeColor": "blue",
+    "group": "Forklift",
+    "category": "worker"
+  },
+  {
+    "id": 146729,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Sparks",
+    "last_name": "Rosales",
+    "age": 35,
+    "eyeColor": "blue",
+    "group": "Random Group",
+    "category": "jobseeker"
+  },
+  {
+    "id": 455986,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Hendrix",
+    "last_name": "Cameron",
+    "age": 29,
+    "eyeColor": "brown",
+    "group": "Random Group",
+    "category": "worker"
+  },
+  {
+    "id": 171389,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Sawyer",
+    "last_name": "Glover",
+    "age": 19,
+    "eyeColor": "blue",
+    "group": "Stock Supplier",
+    "category": "jobseeker"
+  },
+  {
+    "id": 291351,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "King",
+    "last_name": "Rutledge",
+    "age": 26,
+    "eyeColor": "green",
+    "group": "Forklift",
+    "category": "jobseeker"
+  },
+  {
+    "id": 356535,
+    "pic_url": "http://placehold.it/512x512",
+    "first_name": "Lindsay",
+    "last_name": "Kramer",
+    "age": 26,
+    "eyeColor": "green",
+    "group": "Random Group",
+    "category": "jobseeker"
+  }
+]

@@ -1,0 +1,47 @@
+.picture {
+	width:150px;
+	height:150px;
+}
+
+.row { 
+	margin:0px; 
+}
+
+.active {
+	background-color:rgb(36,38,54);
+}
+
+.collection .collection-item {
+	
+	color:white;
+	font-size:1.3em;
+
+}
+
+.collection {
+	margin-top:10px;
+}
+
+.collection-item {
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color:rgb(46,48,68);
+}
+
+.menu { 
+	height:835px;
+	background-color:rgb(46,48,68);
+}
+
+.fix-icon {
+	display:inline-flex;
+	vertical-align: bottom;
+}
+
+.title {
+	font-size:1.3em;
+}
+
+.sub-title {
+	font-size:1.1em;
+}

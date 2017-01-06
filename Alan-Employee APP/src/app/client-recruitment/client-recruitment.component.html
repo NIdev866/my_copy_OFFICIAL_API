@@ -1,0 +1,20 @@
+<div class="row-fix">
+	<ul *ngFor="let v of this.recruitmentList" class="collection with-header">
+		<li class="collection-header"><h4>{{v.campaign_title}}</h4></li>
+		<li *ngFor="let b of v.people_applied" class="collection-item avatar" (click)="showPerson(b.id)" >
+			<img src="{{b.pic_url}}" class="circle">
+			<span class="title">{{b.first_name}} {{b.last_name}}</span>
+			<p> {{b.date_of_birth}} <br> {{b.gender}} </p>
+			<a href="#!" class=" waves-effect waves-light btn right-align secondary-content">Accept</a>
+		</li>
+	</ul>
+</div>
+
+<div id="modal2" class="modal" materialize="modal" [materializeActions]="_viewPerson">
+ 	<div class="modal-content">
+   		<app-view-person></app-view-person>
+  </div>
+  <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-light btn">Close</a>
+    </div>
+</div>

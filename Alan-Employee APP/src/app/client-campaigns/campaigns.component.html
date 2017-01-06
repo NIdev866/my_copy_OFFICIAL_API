@@ -1,0 +1,46 @@
+<div class="row-fix column">
+	<!-- Sectors -->
+  	<ul class="collapsible" materialize="collapsible" data-collapsible="accordion">
+    	<li *ngFor="let sector of this.sectorData">
+    		<div class="collapsible-header"><i class="material-icons">filter_drama</i>{{sector.sector_title}}</div>
+      		<div class="collapsible-body">
+      		<!-- Jobs -->
+      			<ul class="collapsible" materialize="collapsible" data-collapsible="accordion">
+			    	<li style="padding-left:20px" *ngFor="let jobs of sector.jobtitles">
+			    		<div class="collapsible-header"><i class="material-icons">place</i>{{jobs.job_title}}</div>
+			      		<div class="collapsible-body">
+			      		<!-- Campaigns -->
+			      			<ul class="collapsible" materialize="collapsible" data-collapsible="accordion">
+						    	<li style="padding-left:20px" *ngFor="let campaign of jobs.campaigns">
+						    		<div class="collapsible-header"><i class="material-icons">place</i>{{campaign.campaign_name}}</div>
+						      		<div class="collapsible-body">
+						      		<!-- Jobseekers -->
+						      			<ul class="collapsible" materialize="collapsible" data-collapsible="accordion">
+									    	<li style="padding-left:20px" *ngFor="let jobseeker of campaign.jobseekers">
+									    		<div class="collapsible-header"><i class="material-icons">perm_identity</i>{{jobseeker.first_name}} {{jobseeker.last_name}}</div>
+									      		<div class="collapsible-body">
+									      			{{jobseeker.email_id}}
+									      		</div>
+									    	</li>
+									  	</ul>
+						      		</div>
+						    	</li>
+						  	</ul>
+			      		</div>
+			    	</li>
+			  	</ul>
+      		</div>
+    	</li>
+  	</ul>
+</div>
+
+<!-- <button class="btn" (click)="viewPerson()"> -->
+<!-- Modal -->
+<!-- <div id="modal2" class="modal" materialize="modal" [materializeActions]="_viewPerson">
+ 	<div class="modal-content">
+   		<app-view-person></app-view-person>
+  </div>
+  <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-light btn">Close</a>
+    </div>
+</div> -->

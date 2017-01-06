@@ -1,0 +1,14 @@
+.row-fix {
+	margin-top:0px;
+	padding-top:20px;
+}
+
+.column {
+	height: 835px;
+	overflow-y: scroll;
+}
+
+.active{
+	margin:0px;
+	padding:0px;
+}
