@@ -2,34 +2,7 @@
 --------------------------------------HERO SECTION WITH VIDEO-----------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#videobcg { 
+#videobcg {
      position: absolute;
      top: -180px;
      left: 0px;
@@ -51,12 +24,12 @@
     background-image: url('../img/smalllines.png');
     background-repeat: repeat;
     z-index: -1;
-    
+
 }
 
 /*MEDIA FOR BIGGEST DESKTOP SCREENS*/
 @media only screen and (min-width : 1824px) {
-     #videobcg { 
+     #videobcg {
      position: absolute;
      top: 0px;
      left: 0px;
@@ -79,7 +52,7 @@
          left: 0px;
          min-height: 150%;
          min-width: 100%;
-        
+
          width: auto;
          height: auto;
          z-index: -1000;
@@ -87,10 +60,10 @@
         }
     h1{
         span{
-        
+
             font-size: 50px;
         }
-        
+
     }
 
 }
@@ -111,10 +84,10 @@
         }
       h1{
         span{
-        
+
             font-size: 40px;
         }
-        
+
     }
 }
 /*MEDIA FOR TABLETS SCREENS*/
@@ -133,11 +106,11 @@
          overflow: hidden;
         }
     h1>span{
-        
+
             font-size: 40px;
-        
+
     }
-    
+
 }
 /*MEDIA FOR SMALLER SCREENS*/
 @media only screen and (max-width : 321px) {
@@ -153,5 +126,5 @@
          z-index: -1000;
          overflow: hidden;
         }
-    
+
 }

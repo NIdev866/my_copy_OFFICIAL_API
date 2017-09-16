@@ -8,12 +8,12 @@
 
 /*MEDIA FOR BIGGEST DESKTOP SCREENS*/
 @media only screen and (min-width : 1524px) {
-  
+
 
 	.bg-first{
 	 background-image: url('../img/backgrounds/darkBlue.jpg');
-	 
-	} 
+
+	}
     *{
     	box-sizing: border-box;
     }
@@ -26,16 +26,16 @@
 	}
 	.halfpage_wrap{
 
-		display: inline-block;	
+		display: inline-block;
 		width: 60%;
 		z-index: 9001;
 		float: left;
-		position: relative;	
-	} 
+		position: relative;
+	}
 	.homepage_text{
 		position: relative;
-		color: white;
-		
+		color: red;
+
 		.headerAnimation{
 			position: absolute;
 			top: 0;
@@ -50,15 +50,15 @@
 	.mobileapp{
 		right: 7%;
 		bottom: 15%;
-		width: 40%;	
+		width: 40%;
 		position: absolute;
 		z-index: 9000;
 	}
 
 
-  
+
 	/*===========================================ACTION BUTTONS =============*/
-	
+
 	.home-action-button{
 		display: inline-block;
 		padding-left: 40px;
@@ -86,7 +86,7 @@
   		-ms-transition: .30s;
   		transition: .30s;
 
-  	
+
 		&:after{
 			content: "";
 			position: absolute;
@@ -95,7 +95,7 @@
 			width:100%;
 			height: 30%;/*CHANGE THIS TO 0 OR 30%*/
 			background: rgba(255,255,255,0.5);
-			
+
 	  		-webkit-transition: .30s;
 	  		-moz-transition: .30s;
 	  		-o-transition: .30s;
@@ -103,13 +103,13 @@
 	  		transition: .30s;
 
 			z-index: -1;
-			opacity: 0;	
+			opacity: 0;
 		}
 		&:hover:after{
 			height: 100%;/*CHANGE THIS TO HEIGHT*/
 			opacity: 1;
 		}
-	
+
   	}
   	.button-work{
   		font-size: 24px;
@@ -125,7 +125,7 @@
 
   		position: relative;
   		z-index: 1;
-		
+
   		-webkit-transition: .30s;
   		-moz-transition: .30s;
   		-o-transition: .30s;
@@ -140,7 +140,7 @@
 			width:50%;
 			height: 100%;/*CHANGE THIS TO 0 OR 30%*/
 			background: rgba(255,255,255,0.5);
-			
+
 	  		-webkit-transition: .30s;
 	  		-moz-transition: .30s;
 	  		-o-transition: .30s;
@@ -148,7 +148,7 @@
 	  		transition: .30s;
 
 			z-index: -1;
-			opacity: 0;	
+			opacity: 0;
   		}
 		&:after{
 			content: "";
@@ -158,7 +158,7 @@
 			width:50%;
 			height: 100%;/*CHANGE THIS TO 0 OR 30%*/
 			background: rgba(255,255,255,0.5);
-			
+
 	  		-webkit-transition: .30s;
 	  		-moz-transition: .30s;
 	  		-o-transition: .30s;
@@ -166,16 +166,16 @@
 	  		transition: .30s;
 
 			z-index: -1;
-			opacity: 0;	
+			opacity: 0;
 		}
 		&:hover:after,
 		&:hover:before{
 			bottom: 0;/*CHANGE THIS TO HEIGHT*/
 			opacity: 1;
 		}
-		
-	
-	
+
+
+
   	}
   	/*===========================================TESTIMONIAL LINE HR/VR =============*/
   	.line1{
@@ -198,7 +198,7 @@
 			content: '';
 			background-repeat: no-repeat;
 
-			position: absolute;	
+			position: absolute;
 			background-position: 0px 0px;
 			background-image: url('../img/homepage/stars_service.png');
 			z-index: 9999;
@@ -223,8 +223,8 @@
 	.testimonial-wrapper{
 		position: relative;
 		padding-top: 5%;
-		
-	
+
+
 	}
 
 	.testimonial-img-wrapper{
@@ -235,11 +235,11 @@
 		width: 100%;
 		padding-left: 40px;
 
-		p{	
+		p{
 			color: white;
 			display: inline-block;
 			width: 50%;
-		
+
 			padding:10px;
 		}
 		img{
@@ -277,7 +277,7 @@
 		position: relative;
 	}
 
-  	
+
 	.circle {
 	  display: block;
 	  width: $circle-width;
@@ -451,13 +451,13 @@
 		}
 
   	}
-	
-  	
-	
-  
- 
-	
-	
+
+
+
+
+
+
+
 	/*
 	.button-one{
 		font-size: 24px;
@@ -502,7 +502,7 @@
 
 
 
-	
+
 
 	/*
 	.hire_margin{
@@ -520,14 +520,14 @@
 		text-transform: uppercase;
 		padding: 0 20px;
 		margin: 0 0 200px 0 !important;
-		
+
 		&:hover{
 			background: black;
 			color: $yellow;
 		}
 		.ion-chevron-right{
 			font-size: .8em;
-			margin-left:10px;	
+			margin-left:10px;
 		}
 	}
 
@@ -572,13 +572,13 @@
 }
 
 /*MEDIA FOR 17" SCREENS ratio 4:3 AND TABLET LANDSCAPE*/
-@media only screen and (min-width : 1024px) and (max-width : 1523px){ 
+@media only screen and (min-width : 1024px) and (max-width : 1523px){
 /* Styles */
-	
+
 	.bg-first{
 	 background-image: url('../img/backgrounds/darkBlue.jpg');
-	 
-	} 
+
+	}
     *{
     	box-sizing: border-box;
     }
@@ -597,9 +597,9 @@
 		float: left;
 		position: relative;
 
-  	  	
-   		
-	} 
+
+
+	}
 	.homepage_text{
 		color: white;
 		margin-top: 10%;
@@ -613,10 +613,10 @@
 	}
     /*===============================================================*/
 	.testimonial-wrapper{
-		
+
 		display: inline-block;
 		float: left;
-		
+
 	}
 	.testimonial-img-wrapper{
 
@@ -665,7 +665,7 @@
 
 
 
-	
+
 	.home-action-buttons{
 		display: inline-block;
 	}
@@ -689,7 +689,7 @@
 
 
 	}
-	
+
 	/*.hire, .join{
 		display: inline-block;
 		background: fade-out($yellow, 0.3);
@@ -705,7 +705,7 @@
 		}
 		.ion-chevron-right{
 			font-size: .8em;
-			margin-left:10px;	
+			margin-left:10px;
 		}
 	}
 
@@ -731,7 +731,7 @@
 		display: inline-block;
 		margin-top: 80px;
 	    position: relative;
-	  
+
 
 		.img-testimonial{
 			 -moz-border-radius: 4px / 4px;
@@ -781,13 +781,13 @@
 	    width: 100%;
 	    left: 0;
 	}
-	
+
     */
 
 }
 /*MEDIA FOR LAPTOP SCREENS  AND  MOBILE SAMSUNG & IPHONE 5C SCREENS*/
 @media only screen and (min-width : 768px) and (max-width : 1023px){
-	
+
 	/*.hire_margin{
 	    margin-bottom: 1em;
 	}
@@ -796,21 +796,21 @@
 		margin-bottom: 50px;
 	}
 	.hire, .join{
-		
+
 		background: fade-out($yellow, 0.3);
 		color: black;
 		text-decoration: none;
 		font-size: 80px;
 		text-transform: uppercase;
 		padding: 0.2em 1em 0.2em 0.2em;
-		
+
 		&:hover{
 			background: black;
 			color: $yellow;
 		}
 		.ion-chevron-right{
 			font-size: .8em;
-			margin-left:10px;	
+			margin-left:10px;
 		}
 	}
 
@@ -837,7 +837,7 @@
 		margin-top: 80px;
 	    position: relative;
 
-	  
+
 
 		.img-testimonial{
 			 -moz-border-radius: 4px / 4px;
@@ -891,15 +891,14 @@
 /*MEDIA FOR TABLETS SCREENS*/
 @media only screen and (min-width : 322px) and (max-width : 767px){
 /* Styles */
- 
 
-    
+
+
 }
 /*MEDIA FOR SMALLER SCREENS*/
 @media only screen and (max-width : 321px) {
 /* Styles */
- 
 
-    
+
+
 }
-

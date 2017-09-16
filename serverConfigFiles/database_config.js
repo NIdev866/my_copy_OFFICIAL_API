@@ -1,5 +1,5 @@
 var database_config = {
-	
+
 		dev: {
 			host: 'localhost',
 			user: 'root',
@@ -7,7 +7,7 @@ var database_config = {
 			database: 'resume_pro'
 		},
 		prod: {
-			host: 'localhost:',
+			host: 'localhost',
 			user: 'root',
 			password: 'kamikaze13',
 			database: 'resume_pro'
@@ -16,8 +16,8 @@ var database_config = {
 		//FOR USE WITH 'promise-mysql'
 		dev_pool:{
 		  host: 'localhost',
-		  user: 'root',
-		  password: 'kamikaze13',
+		  user: 'patryk',
+		  password: 'patrykties',//was kamikaze13
 		  database: 'resume_pro',
 		  connectionLimit: 10
 		},

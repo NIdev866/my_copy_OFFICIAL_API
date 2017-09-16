@@ -39,9 +39,9 @@ import ApolloClient , { createNetworkInterface } from 'apollo-client';
 import { TestGLComponent } from './test-gl/test-gl.component'
 
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface(
-    'https://g945nkna49.execute-api.eu-west-1.amazonaws.com/stage1/graphql'
-    )
+  networkInterface: createNetworkInterface({
+     uri: 'https://g945nkna49.execute-api.eu-west-1.amazonaws.com/stage1/graphql'
+    }),
 });
 
 
