@@ -10,6 +10,21 @@
 	var morgan = require('morgan');
 	
 
+
+
+
+
+
+
+			// INSTALL MANUALLY THAT MISSING FILE FROM PATRYKS REPO
+
+
+
+
+
+
+
+
 	var dbConnection = require('./dbConnection.js');
 	var path = require('path');
 	var loggly = require('./serverUtils/loggly');
@@ -39,6 +54,7 @@
 		var clientApi = require('./serverRoutes/clientApi.js')(app,express);
 		var workerApi = require('./serverRoutes/workerApi.js')(app,express);
 		var campaignsApi = require('./serverRoutes/campaignsApi.js')(app,express);
+		var createCampaignApi = require('./serverRoutes/createCampaignApi.js')(app,express);
 
 		
 
@@ -66,6 +82,7 @@
 		app.use('/worker',workerApi);
 		app.use('/client',clientApi);
 		app.use('/campaigns', campaignsApi);
+		app.use('/create-campaign', createCampaignApi);
 		 
 		/*
 		app.get('*', function(req,res){

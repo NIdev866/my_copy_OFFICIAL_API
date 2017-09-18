@@ -16,8 +16,8 @@ var database_config = {
 		//FOR USE WITH 'promise-mysql'
 		dev_pool:{
 		  host: 'localhost',
-		  user: 'patryk',
-		  password: 'patrykties',//was kamikaze13
+		  user: 'root',
+		  password: '01nikodem10',//was kamikaze13
 		  database: 'resume_pro',
 		  connectionLimit: 10
 		},
