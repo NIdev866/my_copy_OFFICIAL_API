@@ -24,28 +24,28 @@
 		/*
 			============AUTH WALL=================
 		*/ 
-		api.use('/', (req,res,next) => {//https://WWW,..../admin/ 
-			const authorizationHeader = req.headers['authorization'];
+		//api.use('/', (req,res,next) => {//https://WWW,..../admin/ 
+			//const authorizationHeader = req.headers['authorization'];
 			
-			let token;
+			//let token;
 
-			if(authorizationHeader){
-				token = authorizationHeader.split(' ')[1];
-			}else{
-				return res.status(401).json({error: 'No token provided with this request!'});
-			}
+		// 	if(authorizationHeader){
+		// 		token = authorizationHeader.split(' ')[1];
+		// 	}else{
+		// 		return res.status(401).json({error: 'No token provided with this request!'});
+		// 	}
 
-			jwt.verify(token, auth_config.JWT_SECRET_ADMIN, function(err,decoded){
-				if(err){
-					return res.status(401).json({
-						title: 'Not Authorized Access',
-						error: err
-					});
-				}
-				console.log('ADMIN AUTHORIZED');
-				next();//This jumps down if authorized
-			});
-		});
+		// 	jwt.verify(token, auth_config.JWT_SECRET_ADMIN, function(err,decoded){
+		// 		if(err){
+		// 			return res.status(401).json({
+		// 				title: 'Not Authorized Access',
+		// 				error: err
+		// 			});
+		// 		}
+		// 		console.log('ADMIN AUTHORIZED');
+		// 		next();//This jumps down if authorized
+		// 	});
+		// });
 		/*
 			============AUTH WALL=================
 		*/
