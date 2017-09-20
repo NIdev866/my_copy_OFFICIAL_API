@@ -53,7 +53,7 @@
 		  	createCampaignDao.getNestedJobSectors()
 		  	.then(
 		    	rows => {
-		    	 res.status(200).json({jobSectors: rows});
+		    	 res.status(200).json(rows);
 		    }).catch(
 		        err => {
 			      console.log(err);
